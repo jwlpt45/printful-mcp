@@ -1,0 +1,47 @@
+{
+  "name": "printful-mcp",
+  "version": "0.1.0",
+  "description": "Printful print-on-demand tools for catalog search, mockups, sync products, and draft-only orders. Confirming an order is a separate explicit step.",
+  "author": {
+    "name": "Bootheel Faith Co.",
+    "url": "https://example.com"
+  },
+  "homepage": "https://example.com",
+  "repository": "https://example.com/printful-mcp",
+  "license": "MIT",
+  "keywords": [
+    "printful",
+    "print-on-demand",
+    "ecommerce",
+    "mcp",
+    "orders",
+    "mockups"
+  ],
+  "logo": "./assets/logo.png",
+  "skills": "./skills/",
+  "mcpServers": {
+    "printful": {
+      "command": "npx",
+      "args": ["-y", "printful-mcp"],
+      "env": {
+        "PRINTFUL_API_TOKEN": "${PRINTFUL_API_TOKEN}"
+      }
+    }
+  },
+  "interface": {
+    "displayName": "Printful",
+    "shortDescription": "Search the Printful catalog and place draft orders without auto-confirming.",
+    "longDescription": "MCP server for the official Printful REST API. Look up catalog products and variants, estimate shipping and order costs, upload print files, generate mockups, and create sync products. create_order always saves a draft. The store payment method is charged only when confirm_order is called with confirm set to true. Website, repository, and logo are placeholders until a public listing is published. Developer: Bootheel Faith Co.",
+    "developerName": "Bootheel Faith Co.",
+    "category": "Commerce",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://example.com",
+    "defaultPrompt": [
+      "Search the Printful catalog for a unisex t-shirt and show the first matching product and its variants.",
+      "Estimate shipping and create a draft Printful order, then stop before confirmation."
+    ],
+    "brandColor": "#0F766E",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png"
+  }
+}

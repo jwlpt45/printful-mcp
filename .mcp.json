@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "printful": {
+      "command": "npx",
+      "args": ["-y", "printful-mcp"],
+      "env": {
+        "PRINTFUL_API_TOKEN": "${PRINTFUL_API_TOKEN}"
+      }
+    }
+  }
+}

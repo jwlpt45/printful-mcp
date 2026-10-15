@@ -1,0 +1,35 @@
+{
+  "name": "printful-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the official Printful REST API. Orders are created as drafts until you explicitly confirm them.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Bootheel Faith Co.",
+  "bin": {
+    "printful-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "msw": "^3.0.3",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}
