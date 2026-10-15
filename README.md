@@ -6,7 +6,9 @@ Open-source [Model Context Protocol](https://modelcontextprotocol.io) server for
 
 Author: Bootheel Faith Co. License: MIT.
 
-Homepage, repository URL, and the marketplace logo are placeholders (`https://example.com`, `assets/logo.png`) until this package is published.
+Repository and homepage: https://github.com/jwlpt45/printful-mcp
+
+Logo: https://raw.githubusercontent.com/jwlpt45/printful-mcp/main/assets/logo.png
 
 ## Setup
 

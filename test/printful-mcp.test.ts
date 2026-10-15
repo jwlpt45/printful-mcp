@@ -472,7 +472,12 @@ describe("plugin manifests", () => {
       expect(manifest.author.name).toBe("Bootheel Faith Co.");
       expect(manifest.author.email).toBeUndefined();
       expect(manifest.license).toBe("MIT");
-      expect(manifest.logo).toBe("./assets/logo.png");
+      expect(manifest.homepage).toBe("https://github.com/jwlpt45/printful-mcp");
+      expect(manifest.repository).toBe("https://github.com/jwlpt45/printful-mcp");
+      expect(manifest.logo).toBe(
+        "https://raw.githubusercontent.com/jwlpt45/printful-mcp/main/assets/logo.png",
+      );
+      expect(manifest.interface.logo).toBe(manifest.logo);
       expect(manifest.skills).toBe("./skills/");
       expect(manifest.mcpServers.printful).toEqual({
         command: "npx",

@@ -5,6 +5,11 @@
   "type": "module",
   "license": "MIT",
   "author": "Bootheel Faith Co.",
+  "homepage": "https://github.com/jwlpt45/printful-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwlpt45/printful-mcp.git"
+  },
   "bin": {
     "printful-mcp": "./dist/index.js"
   },
